@@ -1,0 +1,9 @@
+class Category:
+    """Класс для представления категории трат/доходов."""
+
+    def __init__(self, name, type='expense'):
+        self.name = name
+        self.type = type  # 'income' или 'expense'
+
+    def __repr__(self):
+        return f"Category('{self.name}', '{self.type}')"
